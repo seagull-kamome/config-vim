@@ -1,0 +1,12 @@
+[submodule "pack/mypack/start/nerdtree"]
+	path = pack/mypack/start/nerdtree
+	url = http://github.com/scrooloose/nerdtree
+[submodule "pack/mypack/start/nerdgree-git-plugin"]
+	path = pack/mypack/start/nerdgree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin
+[submodule "pack/mypack/start/vim-fugitive"]
+	path = pack/mypack/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "pack/mypack/start/lightline.vim"]
+	path = pack/mypack/start/lightline.vim
+	url = https://github.com/itchyny/lightline.vim.git
