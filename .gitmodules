@@ -10,3 +10,9 @@
 [submodule "pack/mypack/start/lightline.vim"]
 	path = pack/mypack/start/lightline.vim
 	url = https://github.com/itchyny/lightline.vim.git
+[submodule "pack/mypack/start/deoplete.nvim"]
+	path = pack/mypack/start/deoplete.nvim
+	url = https://github.com/Shougo/deoplete.nvim.git
+[submodule "pack/mypack/start/gtags.vim"]
+	path = pack/mypack/start/gtags.vim
+	url = https://github.com/vim-scripts/gtags.vim.git
