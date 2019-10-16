@@ -16,3 +16,6 @@
 [submodule "pack/mypack/start/gtags.vim"]
 	path = pack/mypack/start/gtags.vim
 	url = https://github.com/vim-scripts/gtags.vim.git
+[submodule "pack/mypack/start/spelunker.vim"]
+	path = pack/mypack/start/spelunker.vim
+	url = https://github.com/kamykn/spelunker.vim.git

@@ -3,7 +3,7 @@
 "
 
 " basic settings
-colorscheme industry
+"colorscheme industry
 set number
 set tabstop=8
 set shiftwidth=2
@@ -18,6 +18,8 @@ set tw=2048
 set sw=2
 set ts=8
 set colorcolumn=80,120
+
+set cursorline
 
 set list
 set listchars=tab:>.,trail:_,eol:$,extends:>,precedes:<,nbsp:%
@@ -39,6 +41,31 @@ set tags=./tags,tags,../tags,../../tags,../../../tags,../../../../tags
 " basic buffer settings
 set fileformat=unix
 set fileencoding=utf-8
+
+
+
+"
+" spell checker
+"
+set nospell
+let g:enable_spelunker_vim=1
+let g:enable_spelunker_vim_on_readonly=0
+let g:spelunker_target_min_char_len=4
+let g:spelunker_max_suggest_words=15
+let g:spelunker_max_hi_words_each_buf=100
+let g:spelunker_check_type=1
+let g:spelunker_highlight_type=1
+let g:spelunker_disable_auto_group=1
+augroup spelunker
+  autocmd!
+  autocmd BufWinEnter,BufWritePost *.vim,*.js,*.jsx,*.json,*.md call spelunker#check()
+  autocmd CursorHold *.vim,*.js,*.jsx,*.json,*.md call spelunker#check_displayed_words()
+augroup END
+let g:spelunker_spell_bad_group = 'SpelunkerSpellBad'
+let g:spelunker_complex_or_compound_word_group = 'SpelunkerComplexOrCompoundWord'
+highlight SpelunkerSpellBad cterm=underline ctermfg=247 gui=underline guifg=#9e9e9e
+highlight SpelunkerComplexOrCompoundWord cterm=underline ctermfg=NONE gui=underline guifg=NONE
+
 
 
 
@@ -89,7 +116,7 @@ let g:deooplete#max_list=20
 
 inoremap <expr><TAB>  pumvisible() ? "<C-n>" : "<TAB>"
 inoremap <expr><S-TAB>  pumvisible() ? "<C-p>" : "<S-TAB>"
-inoremap <expr><CR>  pumvisible() ? neocomplete#close_popup() : "<CR>"
+inoremap <expr><CR>  pumvisible() ? deoplete#close_popup() : "<CR>"
 
 
 "
