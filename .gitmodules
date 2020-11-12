@@ -19,3 +19,6 @@
 [submodule "pack/mypack/start/spelunker.vim"]
 	path = pack/mypack/start/spelunker.vim
 	url = https://github.com/kamykn/spelunker.vim.git
+[submodule "pack/mypack/start/typescript-vim"]
+	path = pack/mypack/start/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
