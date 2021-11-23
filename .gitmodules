@@ -22,3 +22,6 @@
 [submodule "pack/mypack/start/typescript-vim"]
 	path = pack/mypack/start/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "pack/mypack/start/elly.vim"]
+	path = pack/mypack/start/elly.vim
+	url = https://github.com/ulwlu/elly.vim.git
